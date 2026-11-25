@@ -6,7 +6,7 @@ Small, dependency-free Python utilities for Romanian and Moldovan data.
 
 - [x] IDNP (Moldova) validation: `routils.idnp.is_valid_idnp`
 - [x] CNP (Romania) validation: `routils.cnp.is_valid_cnp`, `cnp_birth_date`
-- IBAN validation for MD and RO accounts
+- [x] IBAN validation for MD and RO accounts: `routils.iban.is_valid_iban`, `format_iban`, `iban_bank_code`
 - Numbers to words in Romanian (for invoices and contracts)
 - Diacritics: fix mojibake, normalize ş/ţ to ș/ț, strip diacritics
 
