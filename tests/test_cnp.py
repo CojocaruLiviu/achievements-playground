@@ -5,7 +5,7 @@ import pytest
 from routils.cnp import cnp_birth_date, cnp_check_digit, is_valid_cnp
 
 
-@pytest.mark.parametrize("value", ["1800101221144", "2960229400011", "5011231700121", "7002297000158"])
+@pytest.mark.parametrize("value", ["1800101221144", "2960229400011", "5011231700121", "7000229700016"])
 def test_valid(value):
     assert is_valid_cnp(value)
 
@@ -36,4 +36,4 @@ def test_check_digit_remainder_ten_becomes_one():
 def test_birth_date():
     assert cnp_birth_date("1800101221144") == dt.date(1980, 1, 1)
     assert cnp_birth_date("5011231700121") == dt.date(2001, 12, 31)
-    assert cnp_birth_date("7002297000158") is None
+    assert cnp_birth_date("7000229700016") is None
