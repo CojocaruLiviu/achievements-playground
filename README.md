@@ -5,6 +5,7 @@ Small, dependency-free Python utilities for Romanian and Moldovan data.
 ## Planned
 
 - [x] IDNP (Moldova) validation: `routils.idnp.is_valid_idnp`
+- [x] IDNO (Moldova, companies) validation: `routils.idno.is_valid_idno`, `md_code_kind`
 - [x] CNP (Romania) validation: `routils.cnp.is_valid_cnp`, `cnp_birth_date`
 - [x] CUI/CIF (Romania) validation: `routils.cui.is_valid_cui`, `normalize_cui`
 - [x] IBAN validation for MD and RO accounts: `routils.iban.is_valid_iban`, `format_iban`, `iban_bank_code`
